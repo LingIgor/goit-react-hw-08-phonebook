@@ -3,7 +3,7 @@ import { logOut } from 'redux/auth/operation';
 import { fetchContacts, addContacts, deleteContact } from './operations';
 
 const initialState = {
-  items: [{id:1, name: 'igor', phone: 54545454,}],
+  items: [],
   isLoading: false,
   error: null,
 };

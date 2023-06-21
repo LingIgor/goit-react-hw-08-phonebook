@@ -18,11 +18,9 @@ export default function Contacts() {
       <Helmet>
         <title>Your tasks</title>
       </Helmet>
-      {/* <TaskEditor /> */}
       <div>{isLoading && 'Request in progress...'}</div>
-      {/* <TaskList /> */}
-      <ContactForm/>
-      <ContactList/>
+      <ContactForm />
+      <ContactList />
     </>
   );
 }
