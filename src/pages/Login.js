@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { LoginForm } from 'components/LoginForm/LoginForm';
 import { useSelector } from 'react-redux';
 import { selectIsLoggeIn } from 'redux/auth/selectors';
@@ -6,11 +6,11 @@ import { selectIsLoggeIn } from 'redux/auth/selectors';
 export default function Login() {
   const isloggedIn = useSelector(selectIsLoggeIn)
   return (
-    <div>
+    <HelmetProvider>
       <Helmet>
         <title>Login</title>
       </Helmet>
      {!isloggedIn &&  <LoginForm />}
-    </div>
+    </HelmetProvider>
   );
 }

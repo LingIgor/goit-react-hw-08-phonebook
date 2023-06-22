@@ -12,10 +12,6 @@ export const ContactList = () => {
 
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(fetchContacts());
-  // }, [dispatch]);
-
   const delContact = id => {
     dispatch(deleteContact(id));
   };
@@ -33,10 +29,10 @@ export const ContactList = () => {
       <Loading>{isLoading && <p>Loading...</p>}</Loading>
 
       <List>
-        {visible.map(({ id, name, phone }) => {
+        {visible.map(({ id, name, number }) => {
           return (
             <Item key={id}>
-              {name}: {phone}
+              {name}: {number}
               <Button type="button" onClick={() => delContact(id)}>
                 delete
               </Button>

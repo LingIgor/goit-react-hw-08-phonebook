@@ -5,7 +5,7 @@ import React, { lazy } from 'react';
 // import { Section } from './App/App.styled';
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout';
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 // import Home from '../pages/Home';
 
 const Home = lazy(() => import('../pages/Home'));
@@ -14,7 +14,7 @@ const Registr = lazy(() => import('../pages/Registration'));
 const Contacts = lazy(() => import('../pages/Contacts'));
 
 export const App = () => {
-  const dispatch = useDispatch;
+  // const dispatch = useDispatch;
 
   return (
     <Routes>
