@@ -14,6 +14,7 @@ dispatch(logOut())
     <div>
       <p>{name}</p>
       <button onClick={handleLogOut}>Logout</button>
+      
     </div>
   );
 };
