@@ -13,13 +13,12 @@ export const ContactForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
-    console.log(e.target.name.value);
+   
     const contact = {
       name: e.target.elements.name.value,
       number: e.target.elements.phone.value,
     };
-    console.log(contact);
+   
     if (contacts.find(({ name }) => name === contact.name)) {
       alert('sorry');
       return;
