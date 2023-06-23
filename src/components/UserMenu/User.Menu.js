@@ -1,5 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { logOut } from "redux/auth/operation";
+import { Button } from '@chakra-ui/react'
+import { LogOutDiv } from "./UserMenu.styled";
 
 export const UserMenu = () => {
   const name = useSelector(state => state.auth.user.email)
@@ -11,10 +13,10 @@ dispatch(logOut())
 
     
   return (
-    <div>
+    <LogOutDiv>
       <p>{name}</p>
-      <button onClick={handleLogOut}>Logout</button>
+      <Button onClick={handleLogOut}>Logout</Button>
       
-    </div>
+    </LogOutDiv>
   );
 };

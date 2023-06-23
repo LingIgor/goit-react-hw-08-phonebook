@@ -1,6 +1,7 @@
 import React from 'react';
 import { Item, List, Button, Loading } from './ContactList.styled';
 import { useSelector, useDispatch } from 'react-redux';
+import { Text } from '@chakra-ui/react';
 
 import { deleteContact } from 'redux/contacts/operations';
 
@@ -32,7 +33,11 @@ export const ContactList = () => {
         {visible.map(({ id, name, number }) => {
           return (
             <Item key={id}>
+              <Text fontSize={'30px'} color={'#041607'} fontWeight={'600'}>
               {name}: {number}
+              </Text>
+             
+              
               <Button type="button" onClick={() => delContact(id)}>
                 delete
               </Button>

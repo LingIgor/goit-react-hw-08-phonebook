@@ -10,13 +10,20 @@ export const Label = styled.label`
 export const Form = styled.form`
   padding: 50px;
   display: flex;
-  flex-direction: column;
-  border: 1px solid black;
+  flex-direction: column;  
+   
+    align-items: center;
+    background-color: black;
+    border: 3px solid green; 
+px
+ solid green;
+    border-radius: 15px;
 `;
 
 export const Title = styled.h3`
   margin: 0;
   margin-bottom: 15px;
+  font-size: 32px;
 `;
 
 export const Input = styled.input`
@@ -42,3 +49,18 @@ export const Add = styled.button`
     box-shadow: 5px 3px 10px 1px;
   }
 `;
+
+
+export const Box = styled.div `
+padding: 20px;
+    
+    display: flex;
+    width: 600px;
+    background-color: white;
+    flex-direction: column;
+    
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+
+`

@@ -1,8 +1,9 @@
 import React from 'react';
+import { Input } from '@chakra-ui/react';
+import { Box, Title } from 'components/ContactsForm/ContactsForm.styled';
 
 import {
-  Label,
-  Input,
+  Label, 
   Form,
 } from 'components/ContactsForm/ContactsForm.styled';
 import { useDispatch } from 'react-redux';
@@ -17,10 +18,13 @@ export const Filter = () => {
 
   return (
     <Form>
+      <Box>
       <Label>
-        <h3>Find contacts by name</h3>
-        <Input name="filter" onChange={onChangeFilter} />
+        
+      <Title>Find contacts by name</Title>
+        <Input name="filter" onChange={onChangeFilter} size={'sm'} width={'300px'} borderColor={'#56bd77'}/>
       </Label>
+      </Box>
     </Form>
   );
 };

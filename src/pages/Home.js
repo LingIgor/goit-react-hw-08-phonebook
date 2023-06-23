@@ -1,7 +1,10 @@
+import { Div } from "./styled/Home.styled";
+
+
 export default function Home() {
   return (
-    <div>
+    <Div>
       <h1>Task manager welcome page</h1>
-    </div>
+    </Div>
   );
 }

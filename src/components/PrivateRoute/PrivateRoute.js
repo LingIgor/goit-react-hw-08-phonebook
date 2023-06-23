@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux/es/hooks/useSelector';
 export const PrivateRoute = ({ component: Component, redirectTo = '/' }) => {
   const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
   const isRefreshing = useSelector(state => state.auth.isRefreshing);
+  console.log(isRefreshing)
   const shouldRedirect = !isLoggedIn && !isRefreshing;
 
   return shouldRedirect ? <Navigate to={redirectTo} /> : Component;

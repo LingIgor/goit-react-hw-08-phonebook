@@ -10,7 +10,9 @@ position: relative;
 `;
 
 export const List = styled.ul`
-  width: 400px;
+width: 500px;
+
+margin-left: 214px;
 `;
 
 export const Button = styled.button`
